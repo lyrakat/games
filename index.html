@@ -7,26 +7,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
             line-height: 1.5;
-        }
-        h1 {
+            margin: 20px;
             text-align: center;
+            background-color: #f9f9f9;
         }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        /* Grid layout for checkboxes */
         .game-list {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px 30px; /* Adjust spacing */
+            text-align: left;
+            margin: auto;
+            max-width: 1000px; /* Controls the overall width */
         }
-        .game-list label {
-            display: block;
-            margin: 5px 0;
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
         }
-        #score {
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .score {
+            margin-top: 20px;
             font-size: 1.2em;
             font-weight: bold;
-            margin-top: 20px;
-            text-align: center;
         }
     </style>
 </head>
